@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:title="@string/browser_back_key"
+            android:id="@+id/browser_backward"
+            app:showAsAction="never"
+    />
+    <item
+            android:title="@string/browser_stop"
+            app:showAsAction="never"
+            android:id="@+id/browser_stop"
+            android:checkable="false"/>
+    <item
+        android:title="@string/browser_forward_key"
+    app:showAsAction="never"
+    android:id="@+id/browser_forward"/>
+    <item
+        android:title="@string/browser_refresh"
+    app:showAsAction="never"
+    android:id="@+id/browser_refresh"/>
+    <item
+        android:title="@string/browser_close"
+        app:showAsAction="never"
+        android:id="@+id/browser_close"
+    />
+</menu>

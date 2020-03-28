@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:id="@+id/parent_layout"
+>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_margin="@dimen/idle_margin"
+                android:gravity="center"
+                android:id="@+id/magnitude"
+                android:textSize="18sp"
+                android:text="4.6"
+        />
+        <RelativeLayout android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="start"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent">
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/locationPrimary"
+                      android:layout_height="wrap_content"
+                      android:textColor="#595959"
+                      android:textSize="12sp"
+                      android:text="28 km NE of"
+                      android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                      android:layout_alignParentStart="true"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/locationPrimary"
+                      android:id="@+id/locationSecondary"
+                      android:textSize="14sp"
+                      android:textStyle="normal"
+                      android:text="tokyo, japan"
+                      android:textColor="#595959"
+                      android:textAllCaps="false"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_alignParentRight="true"
+                      android:paddingRight="8dp"
+                      android:paddingLeft="8dp"
+                      android:id="@+id/date"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/colorAccent"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                      android:text="jan 03, 2016"
+                      android:textSize="12sp"
+            />
+            <TextView android:layout_width="wrap_content"
+                      android:layout_alignParentRight="true"
+                      android:layout_alignRight="@id/locationSecondary"
+                      android:layout_alignEnd="@id/locationSecondary"
+                      android:paddingTop="4dp"
+                      android:paddingRight="@dimen/idle_margin"
+                      android:paddingLeft="@dimen/idle_margin"
+                      android:layout_alignParentEnd="true"
+                      android:layout_below="@id/date"
+                      android:id="@+id/time"
+                      android:textColor="@color/colorAccent"
+                      android:textSize="11sp"
+                      android:text="5:03 am"
+                      android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                      android:layout_height="wrap_content"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#eeeeee"
+    />
+</LinearLayout>
+<!--
+</android.support.v7.widget.CardView>-->

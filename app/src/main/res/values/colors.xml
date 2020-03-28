@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#394450</color>
+    <color name="colorPrimaryDark">#2D3640</color>
+    <color name="colorAccent">#ff4584</color>
+    <color name="magnitude0">#7fabcf</color>
+    <color name="magnitude1">#4A7BA7</color>
+    <color name="magnitude2">#04B4B3</color>
+    <color name="magnitude3">#10CAC9</color>
+    <color name="magnitude4">#F5A623</color>
+    <color name="magnitude5">#FF7D50</color>
+    <color name="magnitude6">#FC6644</color>
+    <color name="magnitude7">#E75F40</color>
+    <color name="magnitude8">#E13A20</color>
+    <color name="magnitude9">#D93218</color>
+    <color name="magnitude10">#C03823</color>
+    <color name="magnitude11">#350000</color>
+
+    <!--setting solid colors with 128 transparency to use as the background colors for circles in the maps -->
+    <color name="magnitude0_transparent">#807fabcf</color>
+    <color name="magnitude1_transparent">#804A7BA7</color>
+    <color name="magnitude2_transparent">#8004B4B3</color>
+    <color name="magnitude3_transparent">#8010CAC9</color>
+    <color name="magnitude4_transparent">#80F5A623</color>
+    <color name="magnitude5_transparent">#80FF7D50</color>
+    <color name="magnitude6_transparent">#80FC6644</color>
+    <color name="magnitude7_transparent">#80E75F40</color>
+    <color name="magnitude8_transparent">#80E13A20</color>
+    <color name="magnitude9_transparent">#80D93218</color>
+    <color name="magnitude10_transparent">#80C03823</color>
+    <color name="magnitude11_transparent">#80280000</color>
+
+    <color name="alert_green">@android:color/holo_green_light</color>
+    <color name="alert_yellow">#ffe330</color>
+    <color name="alert_orange">#ff7b00</color>
+    <color name="alert_red">#ff0000</color>
+
+    <color name="primary_material_dark">#ff2828</color>
+    <color name="primary_dark_material_dark">#1b1b1b</color>
+    <color name="accent_material_light">#ff4040</color>
+</resources>

@@ -1,0 +1,365 @@
+<resources>
+    <string name="app_name">Equake report</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings_title">Earthquake settings</string>
+    <string name="NO_CONNECTION">Sorry, no internet connection available</string>
+    <string name="settings_min_magnitude_default">4</string>
+    <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_magnitude_label" translatable="false">Magnitude</string>
+    <string name="settings_min_limit_default">250</string>
+    <string name="settings_min_limit_key">min_limit</string>
+    <string name="settings_min_limit_label">Limit the Earthquake list</string>
+    <string name="settings_starting_date_default">0</string>
+    <string name="settings_starting_date_key">starting_date</string>
+    <string name="settings_starting_date_label">Starting date</string>
+    <string name="settings_ending_date_default">0</string>
+    <string name="settings_ending_date_key">ending_date</string>
+    <string name="settings_ending_date_label">Ending date</string>
+    <string name="browser_back_key">Backward</string>
+    <string name="browser_forward_key">Forward</string>
+    <string name="browser_stop">Stop</string>
+    <string name="browser_refresh">Refresh</string>
+    <string name="browser_close">Close</string>
+    <string name="browser_preference_title">Use default browser</string>
+    <string name="browser_preference_summary">when turned on, application will use the inbuilt browser</string>
+    <string name="browser_preference_key">browser_switch_preference</string>
+    <string name="tsunami_warning_true">Yes</string>
+    <string name="tsunami_warning_false">No</string>
+    <string name="order_by_title">Order by</string>
+    <string name="order_by_key">orderBy_list</string>
+    <string name="order_by_default">time</string>
+    <string name="map_key">map_key</string>
+    <string name="map_title">Map type</string>
+    <string name="map_default">Normal</string>
+    <string name="cluster_map_key">Cluster_map_key</string>
+    <string name="cluster_map_title">Cluster earthquakes</string>
+    <string name="cluster_map_preference_summary">When turned on, the earthquakes will be clustered</string>
+    <string name="map_button_title">View on map</string>
+    <string name="browser_button_title">See on USGS</string>
+    <string name="alert_green">No Danger</string>
+    <string name="alert_yellow">Partially Danger</string>
+    <string name="alert_orange">more Danger</string>
+    <string name="alert_red">Danger</string>
+    <string name="not_available">not available</string>
+    <string name="no_alert">no alert</string>
+    <string name="no_earthquake_info">No Earthquake information is available for now</string>
+    <string name="no_equake_info_with_filters">No Earthquake information available with the given filter</string>
+    <string name="details_itemm_see_on_usgs">See on USGS</string>
+    <string name="filter_bottom_info_text">This will not override the settings</string>
+
+    <!--time related texts(Unused)-->
+    <string name="mins_ago">mins ago</string>
+    <string name="today_at">Today at</string>
+
+    <!--filter dialog prompt-->
+    <string name="filter_dialog_prompt">Map type</string>
+
+
+    <!--strings here will be used in the about activity-->
+
+    <string name="activity_about_content_first_para">Equake report displays the earthquakes details above 0 magnitude for the united states, and above 4 for worldwide.\n\n
+    </string>
+    <string name="activity_about_content_second_para">The earthquakes data is from the <b>USGS</b> Website
+    </string>
+    <string name="activity_about_content_second_para_link">
+        http://earthquake.usgs.gov/earthquakes
+    </string>
+    <string name="activity_about_content_features_para">
+        <b>Features :</b>
+    </string>
+    <string name="about_feature_line_1">
+        *See the exact locations of the earthquakes
+    </string>
+    <string name="about_feature_line_2">
+        *See the exact time of the earthquakes
+    </string>
+    <string name="about_feature_line_3">
+        *Click on any quake to see it on map
+    </string>
+    <string name="about_feature_line_4">
+        *Latest earthquakes information up to the last minute
+    </string>
+    <string name="about_feature_line_5">
+        *Option to view on USGS website
+    </string>
+    <string name="about_feature_line_6">
+        *Colors to signify the magnitude of the quakes
+    </string>
+    <string name="about_feature_line_7">
+        *Option to share earthquake details
+    </string>
+
+    <string name="about_activity_content_version_bold">Version : <b>2.0</b>
+    </string>
+    <string name="about_activity_content_version_value">
+        1.0
+    </string>
+    <string name="about_activity_content_copyright">Copyright © 2018 <b>Amit kumar</b>
+    </string>
+    <string name="about_activity_content_credit">
+        All the app codes, and user interface designs has been created by me.\nPlease feel free to Email me if you\'ve found a bug, or have any suggestion or opinion
+    </string>
+    <string name="about_activity_content_final_note">
+        Note - the application uses the current location only to enable the myLocation layer on map, besides it serves no other purpose, and permission can be denied.
+    </string>
+    <string name="about_activity_content_icon_author">
+        Icon created by :
+    </string>
+    <string name="about_activity_content_icon_author_name">
+        Freepik
+    </string>
+    <string name="about_activity_content_icon_author_link">
+        https://www.freepik.com
+    </string>
+    <string name="about_activity_content_flaticon_link">
+        https://www.flaticon.com
+    </string>
+    <string name="about_activity_map_data_info">The Application does not use any storage, but the map uses the storage to download map tiles, if data get\'s cleared, the map will have to download it more frequently.
+    </string>
+    <string name="about_activity_content_informational_warning"><b>This Application is for informational purpose only, and not an Early Warning System.</b></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello world, i\'m a new fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="maps_styling_1">
+        [
+        {
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#1d2c4d\"
+        }
+        ]
+        },
+        {
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#8ec3b9\"
+        }
+        ]
+        },
+        {
+        \"elementType\": \"labels.text.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#1a3646\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"administrative.country\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#4b6878\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"administrative.land_parcel\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#64779e\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"administrative.province\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#4b6878\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"landscape.man_made\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#334e87\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"landscape.natural\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#023e58\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#283d6a\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#6f9ba5\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi\",
+        \"elementType\": \"labels.text.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#1d2c4d\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi.park\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#023e58\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"poi.park\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#3C7680\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#304a7d\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#98a5be\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road\",
+        \"elementType\": \"labels.text.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#1d2c4d\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#2c6675\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"geometry.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#255763\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#b0d5ce\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"road.highway\",
+        \"elementType\": \"labels.text.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#023e58\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"transit\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#98a5be\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"transit\",
+        \"elementType\": \"labels.text.stroke\",
+        \"stylers\": [
+        {
+        \"color\": \"#1d2c4d\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"transit.line\",
+        \"elementType\": \"geometry.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#283d6a\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"transit.station\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#3a4762\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"water\",
+        \"elementType\": \"geometry\",
+        \"stylers\": [
+        {
+        \"color\": \"#0e1626\"
+        }
+        ]
+        },
+        {
+        \"featureType\": \"water\",
+        \"elementType\": \"labels.text.fill\",
+        \"stylers\": [
+        {
+        \"color\": \"#4e6d70\"
+        }
+        ]
+        }
+        ]
+    </string>
+    <string name="title_activity_about">About</string>
+
+    <!--just a back up for the maps key-->
+    <string name="maps_api_key" translatable="false">AIzaSyAZ8baG1W5WIkDnclKnZ9AePqk8kJR4bLo</string>
+</resources>

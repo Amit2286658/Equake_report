@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:title="@string/details_itemm_see_on_usgs"
+            app:showAsAction="never"
+            android:orderInCategory="1"
+            android:id="@+id/SeeOnUSSGS"/>
+    <item
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:orderInCategory="2"
+        android:id="@+id/details_share_button"
+    />
+
+</menu>

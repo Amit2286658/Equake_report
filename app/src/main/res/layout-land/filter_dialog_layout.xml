@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/text_title_1"
+              android:text="Map type"
+              android:textSize="16sp"
+              android:padding="@dimen/idle_padding"
+              android:textColor="@android:color/black"
+    />
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:prompt="@string/filter_dialog_prompt"
+             android:spinnerMode="dropdown"
+             android:layout_marginLeft="32dp"
+             android:layout_marginRight="32dp"
+             android:background="@null"
+             android:layout_marginTop="@dimen/idle_margin"
+             android:id="@+id/filter_spinner"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Time"
+              android:textSize="16sp"
+              android:padding="@dimen/idle_padding"
+              android:textColor="@android:color/black"/>
+
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:prompt="@string/filter_dialog_prompt"
+             android:spinnerMode="dropdown"
+             android:layout_marginLeft="32dp"
+             android:layout_marginRight="32dp"
+             android:background="@null"
+             android:layout_marginTop="@dimen/idle_margin"
+             android:id="@+id/filter_spinner_time"
+    />
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorAccent"
+              android:textSize="12sp"
+              android:paddingTop="@dimen/idle_padding"
+              android:paddingLeft="@dimen/idle_padding"
+              android:paddingRight="@dimen/idle_padding"
+              android:drawablePadding="4dp"
+              android:gravity="center_vertical"
+              android:drawableLeft="@drawable/ic_info_black_24dp"
+              android:text="@string/filter_bottom_info_text"
+              android:drawableStart="@drawable/ic_info_black_24dp"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="end"
+    >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="cancel"
+                  android:id="@+id/filter_dialog_cancel_button"
+                  android:textSize="16sp"
+                  android:paddingBottom="8dp"
+                  android:paddingTop="8dp"
+                  android:paddingRight="20dp"
+                  android:paddingLeft="20dp"
+                  android:textColor="@color/colorAccent"
+                  android:layout_gravity="end"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="OK"
+                  android:id="@+id/filter_dialog_ok_button"
+                  android:textSize="16sp"
+                  android:paddingBottom="8dp"
+                  android:paddingTop="8dp"
+                  android:paddingRight="20dp"
+                  android:paddingLeft="20dp"
+                  android:textColor="@color/colorAccent"
+                  android:layout_gravity="end"
+        />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

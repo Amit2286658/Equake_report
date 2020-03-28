@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:paddingTop="@dimen/idle_margin"
+              android:paddingLeft="@dimen/idle_margin"
+              android:paddingBottom="@dimen/idle_margin"
+              android:paddingRight="@dimen/idle_margin"
+              android:background="@android:color/white"
+              android:id="@+id/details_view"
+              android:layout_height="match_parent">
+    <TextView android:layout_width="72dp"
+              android:layout_gravity="center"
+              android:id="@+id/alert_level"
+              android:background="@drawable/alert_shape"
+              android:gravity="center"
+              android:textColor="@android:color/black"
+              android:text="Green"
+              android:layout_height="72dp"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:text="Tsunami Warning : "
+                  style="@style/item_details_panel"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="Yes"
+                  android:id="@+id/Tsunami_warning"
+                  style="@style/item_details"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  style="@style/item_details_panel"
+                  android:text="Status : "
+                  android:layout_height="wrap_content"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:text="Reviewed"
+                  android:id="@+id/status"
+                  style="@style/item_details"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    >
+        <TextView android:layout_width="wrap_content"
+                  style="@style/item_details_panel"
+                  android:text="felt report : "
+                  android:layout_height="wrap_content"
+        />
+        <TextView android:layout_width="wrap_content"
+                  android:text="42"
+                  android:id="@+id/felt"
+                  style="@style/item_details"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_marginTop="@dimen/idle_margin"
+              android:text="Coordinates"
+              android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+              android:layout_height="wrap_content"
+              android:textColor="@android:color/holo_red_light"/>
+    <LinearLayout android:layout_width="match_parent"
+
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Longitude : "
+                  style="@style/item_details_panel"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:text="167.249"
+                  android:id="@+id/Longitude"
+                  android:layout_height="wrap_content"
+                  style="@style/item_details"
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Latitude : "
+                  style="@style/item_details_panel"
+        />
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="-13.8633"
+                  android:id="@+id/Latitude"
+                  style="@style/item_details"
+        />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:text="Depth : "
+                  style="@style/item_details_panel"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="187"
+                  android:id="@+id/depth"
+                  style="@style/item_details"
+        />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content"
+              android:text="@string/map_button_title"
+              android:textStyle="italic"
+              android:layout_marginTop="@dimen/idle_margin"
+              android:textColor="@color/colorPrimary"
+              style="@style/item_details_panel"
+              android:id="@+id/map_link"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:text="@string/browser_button_title"
+              android:textStyle="italic"
+              android:id="@+id/browser_link"
+              android:textColor="@color/colorPrimary"
+              style="@style/item_details_panel"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="8dp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="OK"
+              android:id="@+id/ok"
+              android:layout_gravity="end"
+              android:layout_marginRight="32dp"
+              android:textColor="@color/colorAccent"
+              android:layout_marginLeft="32dp"
+              android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+    />
+</LinearLayout>

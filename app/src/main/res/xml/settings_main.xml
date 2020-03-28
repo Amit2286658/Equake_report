@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/settings_title">
+<PreferenceCategory
+    android:title="Preferences">
+    <EditTextPreference
+            android:defaultValue="@string/settings_min_magnitude_default"
+            android:inputType="numberDecimal"
+            android:key="@string/settings_min_magnitude_key"
+            android:selectAllOnFocus="true"
+            android:summary="sets the magnitude value
+the current value is : 6"
+            android:title="@string/settings_min_magnitude_label" />
+    <EditTextPreference
+        android:defaultValue="@string/settings_min_limit_default"
+        android:inputType="numberDecimal"
+        android:key="@string/settings_min_limit_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_min_limit_label"
+    />
+    <ListPreference
+        android:key="@string/order_by_key"
+        android:title="@string/order_by_title"
+        android:entries="@array/order_by_names"
+        android:entryValues="@array/order_by_values"
+        android:defaultValue="@string/order_by_default"
+    />
+</PreferenceCategory>
+    <PreferenceCategory
+            android:title="Browser"
+    >
+        <SwitchPreference
+                android:title="@string/browser_preference_title"
+                android:summary="@string/browser_preference_summary"
+            android:defaultValue="true"
+                android:selectAllOnFocus="true"
+                android:key="@string/browser_preference_key"
+
+        />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Maps">
+        <ListPreference
+            android:key="@string/map_key"
+            android:title="@string/map_title"
+            android:entries="@array/map_type_names"
+            android:entryValues="@array/map_type_values"
+            android:defaultValue="@string/map_default"
+        />
+        <SwitchPreference
+                android:key="@string/cluster_map_key"
+                android:title="@string/cluster_map_title"
+                android:defaultValue="true"
+                android:selectAllOnFocus="true"
+                android:summary="@string/cluster_map_preference_summary"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/SettingsActivityTheme"
+        android:orientation="vertical"
+        tools:context="com.example.lenovo.earthquakesampleappwithinternet.detailsActivity"
+>
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardElevation="2dp"
+            android:layout_weight="1"
+    >
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+    >
+    <com.google.android.gms.maps.MapView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/details_mapview"
+            map:liteMode="true"
+            map:mapType="normal"
+    />
+        <android.support.v7.widget.CardView
+                android:layout_width="32dp"
+                app:cardElevation="6dp"
+                android:layout_margin="@dimen/idle_margin"
+                android:layout_gravity="end"
+                android:layout_height="32dp">
+        <ImageView android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="#afffffff"
+                   android:src="@drawable/ic_fullscreen_black_24dp"
+                   android:id="@+id/details_map_full_screen_button"
+        />
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/shape"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_margin="@dimen/idle_margin"
+                    android:gravity="center"
+                    android:id="@+id/magnitude_detail"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:text="4.6"
+            />
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:gravity="center"
+                          android:layout_height="match_parent">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                >
+                    <TextView android:layout_width="0dp"
+                              android:layout_weight="1"
+                              android:id="@+id/locationPrimary_detail"
+                              android:layout_height="wrap_content"
+                              android:textColor="#595959"
+                              android:fontFamily="sans-serif-condensed"
+                              android:text="28 km NE of"
+                              android:textSize="12sp"
+                    />
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginLeft="@dimen/idle_margin"
+                                  android:layout_marginRight="@dimen/idle_margin"
+                    >
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Region : "
+                                  android:textColor="@color/colorAccent"
+                                  android:gravity=""
+                        />
+                        <TextView android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Alaska"
+                                  android:id="@+id/region_detail"
+                        />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/locationSecondary_detail"
+                          android:text="tokyo, japan"
+                          android:textSize="14sp"
+                          android:layout_gravity="start"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+    >
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="@dimen/idle_margin"
+                      android:layout_marginRight="@dimen/idle_margin"
+                      android:paddingBottom="@dimen/idle_padding"
+        ><LinearLayout android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/idle_margin"
+                          android:layout_marginBottom="@dimen/idle_margin"
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Alert level : "
+                          style="@style/item_details_panel"
+                />
+                <TextView android:layout_width="wrap_content"
+                          style="@style/item_details"
+                          android:text="Green"
+                          android:id="@+id/alert_detail"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#eeeeee"
+            />
+        </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Date : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="Dec 12, 2018 04:25 pm"
+                              android:id="@+id/date_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Status : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="reviewed"
+                              android:id="@+id/status_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Felt reports : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="23 peoples reported"
+                              android:id="@+id/felt_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Updated : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="Dec 12, 2018 04:38 pm"
+                              android:id="@+id/updated_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+            >
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Tsunami warning : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="yes"
+                              android:id="@+id/tsunami_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Intensity : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="n/a"
+                              android:id="@+id/intensity_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Significance : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="700"
+                              android:id="@+id/significance_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_marginTop="@dimen/idle_margin"
+                              android:layout_marginBottom="@dimen/idle_margin"
+                >
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="Lat/Lon : "
+                              style="@style/item_details_panel"
+                    />
+                    <TextView android:layout_width="wrap_content"
+                              style="@style/item_details"
+                              android:text="33.098797, -45.097876"
+                              android:id="@+id/latlon_detail"
+                              android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="#eeeeee"
+                />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_marginTop="@dimen/idle_margin"
+                          android:layout_marginBottom="@dimen/idle_margin"
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Depth : "
+                          style="@style/item_details_panel"
+                />
+                <TextView android:layout_width="wrap_content"
+                          style="@style/item_details"
+                          android:text="38 Km"
+                          android:id="@+id/depth_detail"
+                          android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
